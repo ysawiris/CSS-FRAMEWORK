@@ -11,6 +11,51 @@ html {
   padding: 50px;
 }
 
+li {
+  list-style-type: none;
+}
+
+.title {
+  font-size: 20px;
+  color: purple;
+  margin: 10px;
+}
+
+.navbar {
+  margin: 10px;
+  max-width: 100%;
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-size: 15px;
+  border-radius: 10px;
+  border-radius: 0px 0px 0px 7px;
+  box-shadow: 0 0 25px 0 black;
+  background: #c9c6c6;
+  background: linear-gradient(90deg, #c9c6c6 0%, #8a7c7c 50%, black 100%);
+}
+
+.navbar > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: baseline;
+  list-style-type: none;
+}
+
+.navbar a {
+  display: inline-block;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: purple;
+}
+
 #headings {
   font-size: 30px;
   padding-top: 50px;
