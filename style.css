@@ -1,89 +1,278 @@
-body,
+/* Main Styles */
+body {
+    margin-top: 50px;
+    padding: 50px;
+}
+
 html {
-  height: 100%;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  background: #020024;
-  background: linear-gradient(to top right, #020024 0%, #6e0979 0%, #00d4ff 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin: 0px;
-  padding: 50px;
+    /* height: 100%; */
+    font-family: "Noto Sans SC", sans-serif;
+    color: white;
+    background: #020024;
+    background: linear-gradient(
+        to top right,
+        #020024 0%,
+        #6e0979 0%,
+        #00d4ff 100%
+    );
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    margin: 0px;
+}
+
+.container {
+    padding: 50px;
+}
+
+.code-block {
+    font-size: 20px;
 }
 
 li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .title {
-  font-size: 20px;
-  color: purple;
-  margin: 10px;
+    font-size: 20px;
+    color: purple;
+    margin: 10px;
 }
 
+/* unvisited link */
+a:link {
+    color: darkorange;
+}
+
+/* visited link */
+a:visited {
+    color: darkgrey;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: darkgoldenrod;
+}
+
+/* Navbar */
 .navbar {
-  margin: 10px;
-  max-width: 100%;
-  align-items: baseline;
-  display: flex;
-  justify-content: space-between;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  font-size: 15px;
-  border-radius: 10px;
-  border-radius: 0px 0px 0px 7px;
-  box-shadow: 0 0 25px 0 black;
-  background: #c9c6c6;
-  background: linear-gradient(90deg, #c9c6c6 0%, #8a7c7c 50%, black 100%);
+    margin: 10px;
+    max-width: 100%;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px 0 black;
+    background: #c9c6c6;
+    background: linear-gradient(90deg, #c9c6c6 0%, #8a7c7c 50%, black 100%);
 }
 
 .navbar > ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: baseline;
-  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    list-style-type: none;
 }
 
 .navbar a {
-  display: inline-block;
-  color: white;
-  padding: 5px;
-  text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
 }
 
 .navbar a:hover {
-  color: purple;
+    color: darkorange;
 }
 
+/* Headers */
 #headings {
-  font-size: 30px;
-  padding-top: 50px;
-  margin-top: 50px;
+    font-size: 30px;
 }
-
+.headings {
+    padding: 0 25px 0 25px;
+}
 h1 {
-  font-size: 67.5px;
+    font-size: 67.5px;
 }
 
 h2 {
-  font-size: 60px;
+    font-size: 60px;
 }
 
 h3 {
-  font-size: 52.5px;
+    font-size: 52.5px;
 }
 
 h4 {
-  font-size: 45px;
+    font-size: 45px;
 }
 
 h5 {
-  font-size: 37.5px;
+    font-size: 37.5px;
 }
 
 h6 {
-  font-size: 30px;
+    font-size: 30px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* Buttons */
+button {
+    --bg-color: #fff;
+    --font-color: black;
+
+    padding: 0.5em 0.75em;
+    border: 1px solid;
+    border-radius: 0.5em;
+    font-size: 1em;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--font-color);
+    color: var(--bg-color);
+}
+
+button.btn-primary {
+    --bg-color: lightblue;
+    --font-color: white;
+}
+button.btn-secondary {
+    --bg-color: rgba(169, 169, 169);
+    --font-color: white;
+}
+
+button.btn-success {
+    --bg-color: rgba(131, 245, 44);
+    --font-color: white;
+}
+
+button.btn-danger {
+    --bg-color: rgba(255, 0, 0, 0.6);
+    --font-color: white;
+}
+
+button.btn-warning {
+    --bg-color: #ffcc00;
+    --font-color: white;
+}
+
+button.btn-warning:hover {
+    --bg-color: white;
+    --font-color: #ffcc00;
+}
+button.btn-info {
+    --bg-color: turquoise;
+    --font-color: white;
+}
+
+button.btn-light {
+    --bg-color: white;
+    --font-color: black;
+}
+
+button.btn-dark {
+    --bg-color: black;
+    --font-color: white;
+}
+button.btn-submit {
+    --bg-color: green;
+    --font-color: white;
+}
+
+button.btn-link {
+    text-decoration: none;
+    --bg-color: cadetblue;
+    --font-color: white;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    padding: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    border: 0.5px solid #b6156e;
+    padding: 1em;
+    border-radius: 20px;
+    border-width: 1px;
+    outline: none !important;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border: 0.5px solid tomato;
+    border-width: 4px;
+    margin: 2em;
+    margin-top: 0;
+}
+
+::placeholder {
+    font-family: "Noto Sans SC", sans-serif;
+    color: #333;
+    font-size: 8pt;
+    opacity: 0.4;
+    text-align: center;
+}
+
+input[type="submit"] {
+    align-self: flex-end;
+    color: white;
+    background-color: #1583b6;
+    border-radius: 20px;
+    border: none;
+    padding: 1em;
+    transition: 600ms;
+}
+
+input[type="submit"]:hover {
+    align-self: flex-end;
+    color: black;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #1583b6;
+}
+
+/* Cards */
+#cards {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    max-width: 300px;
+
+    margin: 0 10px 0 10px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* The container inside the card */
+.card > .container {
+    padding: 2px 16px;
+}

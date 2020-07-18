@@ -2,10 +2,11 @@
 <head>
 	<title>CSS Framework Starter Sample</title>
 	<link rel="stylesheet" href="./style.css">
-	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&display=swap" rel="stylesheet">
 </head>
 <body class="dark">
 	
+
 	<div class="navbar">
 		<ul>
 			<li><h1 class="title">YOYO'S FRAMEWORK</h1></li>
@@ -13,35 +14,40 @@
 			<li><a href="#navbar">Navbar</a></li>
 			<li><a href="#headings">Headings</a></li>
 			<li><a href="#type">Type</a></li>
-			<li><a href="#forms">forms</a>
+			<li><a href="#forms">Forms</a>
 			<li><a href="#footer">Footer</a></li>
 		</ul>
 		<ul>
 			<li><a href="link/to/your/framework/repo">GitHub</a></li>
 		</ul>
 	</div>
+	<div class="container">
 
-  <div class="container">
+  <div class="container-headers">
 		<section id="headings">
 			<h1>Headings</h1>
-			<h1>H1 Heading</h1>
-			<h2>H2 Heading</h2>
-			<h3>H3 Heading</h3>
-			<h4>H4 Heading</h4>
-			<h5>H5 Heading</h5>
-			<h6>H6 Heading</h6>
-
-			<pre>
+			<div class="headings">
+				<h1>H1 Heading</h1>
+				<h2>H2 Heading</h2>
+				<h3>H3 Heading</h3>
+				<h4>H4 Heading</h4>
+				<h5>H5 Heading</h5>
+				<h6>H6 Heading</h6>
+			</div>
+			<h6 style="margin: 0;">Code Snippet</h6>
+			<p style="font-size: small; margin-left: 30px;">All you need to do is define a h tag and set the size using a number 1-6</p>
+			<pre class="code-block">
 				<code>
-                    &lt;h1&gt;Headings&lt;/h1&gt;
-                    &lt;h1&gt;H1 Heading&lt;/h1&gt;
-                    &lt;h2&gt;H2 Heading&lt;/h2&gt;
-                    &lt;h3&gt;H3 Heading&lt;/h3&gt;
-                    &lt;h4&gt;H4 Heading&lt;/h4&gt;
-                    &lt;h5&gt;H5 Heading&lt;/h5&gt;
-                    &lt;h6&gt;H6 Heading&lt;/h6&gt;
+		&lt;h1&gt;Headings&lt;/h1&gt;
+		&lt;h1&gt;H1 Heading&lt;/h1&gt;
+		&lt;h2&gt;H2 Heading&lt;/h2&gt;
+		&lt;h3&gt;H3 Heading&lt;/h3&gt;
+		&lt;h4&gt;H4 Heading&lt;/h4&gt;
+		&lt;h5&gt;H5 Heading&lt;/h5&gt;
+		&lt;h6&gt;H6 Heading&lt;/h6&gt;
 				</code>
 			</pre>
+			
 		</section>
 		
 		<section id="type">
@@ -53,9 +59,9 @@
 				abbr for things like <abbr title="Hyper Text Markup Language">HTML</abbr>
 				and <abbr title="Cascading Stylesheets">CSS</abbr>.</p>
 			
-			<pre>
+			<pre class="code-block" style="font-size: 15px;">
 				<code>
-                    &lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; paragraph. It includes some &lt;em&gt;inline&lt;/em&gt; elements such as &lt;strong&gt; and &lt;em&gt;.&lt;/p&gt;
+	&lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; paragraph. It includes some &lt;em&gt;inline&lt;/em&gt; elements such as &lt;strong&gt; and &lt;em&gt;.&lt;/p&gt;
 				</code>
 			</pre>
 		</section>
@@ -63,26 +69,38 @@
 		<section id="forms">
 			<h2>Buttons</h2>
 			<p>This is your average button. You might want to click it.</p>
-			<p><button>Submit</button></p>
-			<pre>
-				<code>
-                    &lt;button&gt;Submit&lt;/button&gt;
-				</code>
-			</pre>
+			<p> 
+				<button type="button" class="btn-submit">Submit</button>
+				<button type="button" class="btn-primary">Primary</button>
+				<button type="button" class="btn-secondary">Secondary</button>
+				<button type="button" class="btn-success">Success</button>
+				<button type="button" class="btn-danger">Danger</button>
+				<button type="button" class="btn-warning">Warning</button>
+				<button type="button" class="btn-info">Info</button>
+				<button type="button" class="btn-light">Light</button>
+				<button type="button" class="btn-link">Link</button>
+				<button type="button" class="btn-dark">Dark</button>
+			</p>
+			
+<pre class="code-block">
+	<code>
+		&lt;button&gt;Submit&lt;/button&gt;
+	</code>
+</pre>
 			<p>This button has consequences. You might want to think twice before clicking.</p>
 			<p>Custimize buttons by adding CSS variables inline or with a class.</p>
 			<p>
-			<button style="--weight: bold; --background-color: #f85353;">Delete</button>
-			<button style="--background-color: #6bc253;">Go!</button>
+			<button style="--weight: bold; --bg-color: #f85353;">Delete</button>
+			<button style="--bg-color: #6bc253;">Go!</button>
 			</p>
 
-			<pre>
-				<code>
-					&lt;button style=&quot;--weight: bold; --background-color: #f85353;&quot;&gt;Delete&lt;/button&gt;
+<pre class="code-block">
+	<code>
+	&lt;button style=&quot;--weight: bold; --background-color: #f85353;&quot;&gt;Delete&lt;/button&gt;
 
-					&lt;button style=&quot;--background-color: #6bc253;&quot;&gt;Go!&lt;/button&gt;
-				</code>
-			</pre>
+	&lt;button style=&quot;--background-color: #6bc253;&quot;&gt;Go!&lt;/button&gt;
+	</code>
+</pre>
 		</section>
 		
 		<section>
@@ -93,23 +111,20 @@
 		<section>
 			<h2>Forms and controls</h2>
 			<form>
+				<span>Text:</span>
 				<label>
-					<span>Text:</span>
 					<input type="text" placeholder="What is your name?">
 				</label>
-
+				<span>Email:</span>
 				<label>
-					<span>Email:</span>
-					<input type="email" placeholder="What is your name?">
+					<input type="email" placeholder="What is your email?">
 				</label>
-
+				<span>Password:</span>
 				<label>
-					<span>Password:</span>
-					<input type="password" placeholder="What is your name?">
+					<input type="password" placeholder="Enter your password">
 				</label>
-
+				<span>Your comments</span>
 				<label>
-					<span>Your comments</span>
 					<textarea placeholder="Your comment"></textarea>
 				</label>
 
@@ -159,6 +174,57 @@
 				<div style="background-color: var(--color-lightest)">--color-lightest</div>
 			</div>
 		</section> -->
+		<section id="card-title">
+			<h2>Cards</h2>
+			<p>A card has an image, name/title, and description</p>
+			<p>To put your cards in a row, put all the cards in a container with the <code>id="cards"</code> </p>
+		</section>
+		<section id="cards">
+			<div class="card">
+				<img src="img_avatar.png" alt="Avatar" style="width:100%">
+				<div class="container">
+				  <h4><b>John Doe</b></h4>
+				  <p>Architect & Engineer</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="img_avatar.png" alt="Avatar" style="width:100%">
+				<div class="container">
+				  <h4><b>John Doe</b></h4>
+				  <p>Architect & Engineer</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="img_avatar.png" alt="Avatar" style="width:100%">
+				<div class="container">
+				  <h4><b>John Doe</b></h4>
+				  <p>Architect & Engineer</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="img_avatar.png" alt="Avatar" style="width:100%">
+				<div class="container">
+				  <h4><b>John Doe</b></h4>
+				  <p>Architect & Engineer</p>
+				</div>
+			</div>
+		</section>
+		<section id="card-snippet">
+			<h6>Card Code Snippet</h6>
+			<div>
+				<pre class="code-block">
+					<code>
+		&lt;div class=&quot;card&quot;&gt;
+			&lt;img src=&quot;image_path.jpg&quot;&gt;
+			&lt;div class=&quot;container&quot;&gt;
+				&lt;h1&gt;&lt;b&gt;JOHN DOE&lt;/b&gt;&lt;/h1&gt;
+				&lt;p&gt;Card Description&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+					</code>
+				</pre>
+			</div>
+		</section>
 		
 		<section id="navbar">
 			<h1>Navbar</h1>
@@ -180,15 +246,15 @@
 			<div>
 				<pre class="code-block">
 					<code>
-					&lt;div class=&quot;navbar&quot;&gt;
-					  &lt;ul&gt;
-						 &lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
-						 &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
-						 &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
-						 &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
-						 &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
-					  &lt;/ul&gt;
-					&lt;/div&gt;
+	&lt;div class=&quot;navbar&quot;&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
 					</code>
 				</pre>
 			</div>
@@ -213,18 +279,18 @@
 			<div>
 				<pre class="code-block">
 					<code>
-						&lt;div class=&quot;navbar&quot;&gt;
-							&lt;ul&gt;
-								&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
-								&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
-								&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
-							&lt;/ul&gt;
-							
-							&lt;ul&gt;
-								&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-								&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-							&lt;/ul&gt;
-						&lt;/div&gt;
+	&lt;div class=&quot;navbar&quot;&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
 					</code>
 				</pre>
 			</div>
@@ -245,23 +311,22 @@
 			</div>
 
 			<div>
-					<pre class="code-block">
-						<code>
-							&lt;div class=&quot;navbar&quot;&gt;
-								&lt;ul&gt;
-									&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
-								&lt;/ul&gt;
-								
-								&lt;ul&gt;
-									&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
-									&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
-									&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-									&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-								&lt;/ul&gt;
-							&lt;/div&gt;
-						</code>
-					</pre>
-				</div>
+				<pre class="code-block">
+					<code>
+	&lt;div class=&quot;navbar&quot;&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+					</code>
+				</pre>
+			</div>
 				
 
 
@@ -286,33 +351,33 @@
 			</div>
 
 			<div>
-					<pre class="code-block">
-						<code>
-							&lt;div class=&quot;navbar&quot;&gt;
-								&lt;ul&gt;
-									&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
-									&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
-								&lt;/ul&gt;
-								
-								&lt;ul&gt;
-									&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
-								&lt;/ul&gt;
-								
-								&lt;ul&gt;
-									&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-									&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-								&lt;/ul&gt;
-							&lt;/div&gt;
-						</code>
-					</pre>
-				</div>
+				<pre class="code-block">
+					<code>
+	&lt;div class=&quot;navbar&quot;&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+
+		&lt;ul&gt;
+			&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+					</code>
+				</pre>
+			</div>
 
 
 		</section>
 		
 		
 		
-		<section id="footers">
+		<section id="footer">
 			<h2>Page Footer</h2>
 			<div class="page-footer">
 				<ul>
@@ -350,30 +415,31 @@
 
 				<p>Define some colors</p>
 				<p>Look at the dictionary of colors at the top of 
-					<code>lesson-06-example-2.scss</code>. These are the base colors.
-				shown here. </p>
+					<code>lesson-06-example-2.scss</code>. These are the base colors. 
+				shown here. 
+				</p>
   
-  <div class="swatch-container">
-    <div class="swatch" style="background-color: var(--color-gray-lighter-4)"></div>
-    <div class="swatch" style="background-color: var(--color-gray-lighter-3)"></div>
-    <div class="swatch" style="background-color: var(--color-gray-lighter-2)"></div>
-    <div class="swatch" style="background-color: var(--color-gray-lighter-1)"></div>
-    <div class="swatch" style="background-color: var(--color-gray)"></div>
-    <div class="swatch" style="background-color: var(--color-gray-darker-1)"></div>
-    <div class="swatch" style="background-color: var(--color-gray-darker-2)"></div>
-    <div class="swatch" style="background-color: var(--color-gray-darker-3)"></div>
-    <div class="swatch" style="background-color: var(--color-gray-darker-4)"></div>
+			<div class="swatch-container">
+				<div class="swatch" style="background-color: var(--color-gray-lighter-4)"></div>
+				<div class="swatch" style="background-color: var(--color-gray-lighter-3)"></div>
+				<div class="swatch" style="background-color: var(--color-gray-lighter-2)"></div>
+				<div class="swatch" style="background-color: var(--color-gray-lighter-1)"></div>
+				<div class="swatch" style="background-color: var(--color-gray)"></div>
+				<div class="swatch" style="background-color: var(--color-gray-darker-1)"></div>
+				<div class="swatch" style="background-color: var(--color-gray-darker-2)"></div>
+				<div class="swatch" style="background-color: var(--color-gray-darker-3)"></div>
+				<div class="swatch" style="background-color: var(--color-gray-darker-4)"></div>
 
-    <div class="swatch" style="background-color: var(--color-info)"></div>
-    <div class="swatch" style="background-color: var(--color-success)"></div>
-    <div class="swatch" style="background-color: var(--color-danger)"></div>
-    <div class="swatch" style="background-color: var(--color-callout)"></div>
-    <div class="swatch" style="background-color: var(--color-secondary)"></div>
-    <div class="swatch" style="background-color: var(--color-other)"></div>
-    <div class="swatch" style="background-color: var(--color-alternate)"></div>
-    <div class="swatch" style="background-color: var(--color-primary)"></div>
-    <div class="swatch" style="background-color: var(--color-gray)"></div>
-  </div>
+				<div class="swatch" style="background-color: var(--color-info)"></div>
+				<div class="swatch" style="background-color: var(--color-success)"></div>
+				<div class="swatch" style="background-color: var(--color-danger)"></div>
+				<div class="swatch" style="background-color: var(--color-callout)"></div>
+				<div class="swatch" style="background-color: var(--color-secondary)"></div>
+				<div class="swatch" style="background-color: var(--color-other)"></div>
+				<div class="swatch" style="background-color: var(--color-alternate)"></div>
+				<div class="swatch" style="background-color: var(--color-primary)"></div>
+				<div class="swatch" style="background-color: var(--color-gray)"></div>
+			</div>
 
 		</section>
   </div>
@@ -392,12 +458,11 @@
 			<li><a href="">CSS Tricks</a></li>
 			<li><a href="">CSS Tricks</a></li>
 		</ul>
-		
-		<ul>
-			<li><h3>Contact</h3></li>
-			<li><a href="https://github.com/soggybag/frmwrk-css">GitHub</a></li>
-		</ul>
+		<h6 style="display: flex; justify-content: center;">Check out my GitHub Repo to learn on to use this Web Component</h6>
+		<ticker-tape>YOYO's GitHub</ticker-tape>
 	</div>
+</div>
+	<script src="./js/ticker-tape.js"></script>
 
 	<script src="./js/frmwrk-slides.js"></script>
 	<script src="./js/frmwrk-slides-2.js"></script>

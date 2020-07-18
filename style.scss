@@ -1,3 +1,4 @@
+// Variables
 $color: purple;
 $primary-color: rgba(123, 37, 44, 0.7);
 $size: 100px;
@@ -5,22 +6,28 @@ $base-font-size: 15px;
 $large-font-size: 1.85em;
 $number-of-columns: 4;
 $golden-ratio: 1.618;
-
-body,
+/* Main Styles */
+body {
+    margin-top: 50px;
+    padding: 50px;
+}
 html {
-    height: 100%;
-    font-family: "Montserrat", sans-serif;
+    /* height: 100%; */
+    font-family: "Noto Sans SC", sans-serif;
     color: white;
-    background: rgb(2, 0, 36);
+    background: #020024;
     background: linear-gradient(
         to top right,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(110, 9, 121, 1) 0%,
-        rgba(0, 212, 255, 1) 100%
+        #020024 0%,
+        #6e0979 0%,
+        #00d4ff 100%
     );
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     margin: 0px;
+}
+
+.container {
     padding: 50px;
 }
 
@@ -33,6 +40,7 @@ li {
     color: $color;
     margin: 10px;
 }
+/* Navbar */
 .navbar {
     margin: 10px;
     max-width: 100%;
@@ -73,10 +81,9 @@ li {
     color: $color;
 }
 
+/* Headers */
 #headings {
     font-size: $base-font-size * 2;
-    padding-top: 50px;
-    margin-top: 50px;
 }
 
 h1 {
@@ -100,4 +107,27 @@ h5 {
 
 h6 {
     font-size: $base-font-size * 2;
+}
+
+/* Buttons */
+button {
+    padding: 0.5em 0.75em;
+    border: 1px solid;
+    border-radius: 0.5em;
+    font-size: 1em;
+
+    background-color: #fff;
+    color: black;
+
+    cursor: pointer;
+}
+
+button:hover {
+    color: #fff;
+    background-color: black;
+}
+
+button.btn-primary {
+    color: white;
+    background-color: lightblue;
 }
